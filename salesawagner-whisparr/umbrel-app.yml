@@ -1,0 +1,20 @@
+manifestVersion: 1
+id: salesawagner-whisparr
+category: Media
+name: Whisparr
+version: "2.0"
+tagline: Movie collection manager
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whisparr.png
+description: Gerenciador de coleção de filmes, similar ao Radarr.
+developer: Whisparr
+website: https://github.com/Whisparr/Whisparr
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/Whisparr/Whisparr
+support: https://github.com/Whisparr/Whisparr/issues
+port: 6969
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

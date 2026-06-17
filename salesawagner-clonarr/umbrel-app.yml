@@ -4,7 +4,6 @@ category: media
 name: Clonarr
 version: "1.0"
 tagline: Clone and manage your Arr stack
-icon: icon.svg
 description: Permite clonar configurações entre instâncias do seu stack *arr.
 developer: Clonarr
 website: https://github.com/jsaddiction/Clonarr
@@ -12,6 +11,7 @@ submitter: salesawagner
 submission: https://github.com/salesawagner/salesawagner-umbrel-store
 repo: https://github.com/jsaddiction/Clonarr
 support: https://github.com/jsaddiction/Clonarr/issues
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/trash-guides.png
 port: 7777
 gallery: []
 path: ""
