@@ -1,0 +1,20 @@
+manifestVersion: 1
+id: salesawagner-clonarr
+category: media
+name: Clonarr
+version: "1.0"
+tagline: Clone and manage your Arr stack
+icon: icon.svg
+description: Permite clonar configurações entre instâncias do seu stack *arr.
+developer: Clonarr
+website: https://github.com/jsaddiction/Clonarr
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/jsaddiction/Clonarr
+support: https://github.com/jsaddiction/Clonarr/issues
+port: 7777
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []
