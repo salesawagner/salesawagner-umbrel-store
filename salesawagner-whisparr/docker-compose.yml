@@ -1,14 +1,43 @@
 services:
+  app_proxy:
+    environment:
+      APP_HOST: salesawagner-whisparr_server_1
+      APP_PORT: 6969
+      PROXY_AUTH_WHITELIST: /api/*
+    container_name: salesawagner-whisparr_app_proxy_1
   server:
-    image: ghcr.io/thespad/whisparr:latest
-    container_name: salesawagner-whisparr_server_1
+    image: ghcr.io/hotio/whisparr:latest
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Sao_Paulo
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/home/Downloads:/downloads
-    ports:
-      - ${APP_PORT}:6969
+      - /mnt/downloads/complete:/downloads/complete
+      - /mnt/media/media/xxx/swap:/media/swap
+      - /mnt/media/media/xxx/web:/media/web
     restart: on-failure
+    container_name: salesawagner-whisparr_server_1
+  mac:
+    image: >-
+      getumbrel/media-app-configurator:v1.3.0@sha256:67e75dd9f5a14402b7816119a8e20189bc2465484cea077909d164687e59742b
+    user: '1000:1000'
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - /mnt/downloads/complete:/downloads/complete
+      - /mnt/media/media/xxx/swap:/media/swap
+      - /mnt/media/media/xxx/web:/media/web
+    environment:
+      APP_ID: salesawagner-whisparr
+      APP_URL: http://salesawagner-whisparr_server_1:6969
+      TRANSMISSION_HOST: transmission_server_1
+      TRANSMISSION_PORT: 9091
+      ROOT_FOLDER: /media/shows
+      QBITTORRENT_INSTALLED: ${APP_SONARR_QBITTORRENT_INSTALLED:-"false"}
+      QBITTORRENT_HOST: qbittorrent_server_1
+      QBITTORRENT_PORT: 8080
+      SABNZBD_INSTALLED: ${APP_SONARR_SABNZBD_INSTALLED:-"false"}
+      SABNZBD_HOST: sabnzbd_web_1
+      SABNZBD_PORT: 8080
+      SABNZBD_API_KEY: ${APP_SONARR_SABNZBD_API_KEY:-""}
+    container_name: salesawagner-whisparr_mac_1
