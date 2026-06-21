@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-prowlarr
 category: media
 name: Prowlarr
-version: "1.0"
+version: "1.1"
 tagline: Indexer manager para *arr
 description: >
   Prowlarr centraliza e gerencia seus indexadores Usenet e torrent,

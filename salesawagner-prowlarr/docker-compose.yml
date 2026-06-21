@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: prowlarr_server_1
+      APP_HOST: prowlarr
       APP_PORT: 9696
       PROXY_AUTH_WHITELIST: /api/*
     container_name: prowlarr_app_proxy_1
@@ -9,7 +9,7 @@ services:
 
   server:
     image: ghcr.io/hotio/prowlarr
-    container_name: prowlarr_server_1
+    container_name: prowlarr
     environment:
       - PUID=1000
       - PGID=1000
@@ -32,10 +32,10 @@ services:
     environment:
       APP_ID: salesawagner-prowlarr
       # URL interna do próprio app dentro da rede Docker
-      APP_URL: http://prowlarr_server_1:9696
+      APP_URL: http://prowlarr:9696
       # URLs padrão do stack *arr que o configurador usa
-      RADARR_URL: http://radarr_server_1:7878
+      RADARR_URL: http://radarr:7878
       RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
-      SONARR_URL: http://sonarr_server_1:8989
+      SONARR_URL: http://sonarr:8989
       SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
     container_name: salesawagner-prowlarr_mac_1
