@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: stash_server_1
+      APP_HOST: stash
       APP_PORT: 9999
       PROXY_AUTH_WHITELIST: /api/*
     container_name: stash_app_proxy_1
@@ -9,7 +9,7 @@ services:
 
   server:
     image: ghcr.io/hotio/stash
-    container_name: stash_server_1
+    container_name: stash
     environment:
       - PUID=1000
       - PGID=1000
@@ -18,8 +18,7 @@ services:
       - WEBUI_PORTS=9999/tcp
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - /mnt/downloads:/downloads
-      - /mnt/media/media:/media
+      - /mnt/media/media/xxx:/media/xxx
     restart: unless-stopped
 
   mac:
@@ -31,11 +30,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-stash
-      # URL interna do próprio app dentro da rede Docker
-      APP_URL: http://stash_server_1:9999
-      # URLs padrão do stack *arr que o configurador usa
-      RADARR_URL: http://radarr_server_1:7878
-      RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
-      SONARR_URL: http://sonarr_server_1:8989
-      SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
+      APP_URL: http://stash:9999
     container_name: salesawagner-stash_mac_1
