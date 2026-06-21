@@ -7,7 +7,7 @@ services:
     container_name: whisparr-v3_app_proxy_1
     restart: unless-stopped
 
-  server:
+  whisparr-v3:
     image: ghcr.io/hotio/whisparr:v3
     container_name: whisparr-v3
     environment:
