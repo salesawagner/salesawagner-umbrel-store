@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-qbittorrent
+category: media
+name: qBittorrent
+version: "1.0"
+tagline: Cliente BitTorrent com Web UI
+description: >
+  qBittorrent é um cliente BitTorrent leve, com interface web, ideal para
+  integrar com Radarr, Sonarr, Prowlarr e Whisparr.
+developer: qBittorrent
+website: https://www.qbittorrent.org/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/qbittorrent/qBittorrent
+support: https://github.com/qbittorrent/qBittorrent/issues
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/qbittorrent.png
+port: 8082
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

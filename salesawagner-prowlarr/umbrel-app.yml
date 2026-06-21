@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-prowlarr
+category: media
+name: Prowlarr
+version: "1.0"
+tagline: Indexer manager para *arr
+description: >
+  Prowlarr centraliza e gerencia seus indexadores Usenet e torrent,
+  integrando com Radarr, Sonarr, Whisparr e outros apps do ecossistema *arr.
+developer: Prowlarr
+website: https://prowlarr.com/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/Prowlarr/Prowlarr
+support: https://github.com/Prowlarr/Prowlarr/issues
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/prowlarr.png
+port: 9696
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-seerr
+category: media
+name: Seerr
+version: "1.0"
+tagline: Pedidos de mídia para Plex/Jellyfin
+description: >
+  Seerr é uma aplicação de pedidos de mídia que permite que usuários solicitem
+  filmes e séries para suas bibliotecas Plex, Jellyfin ou Emby.
+developer: Seerr Team
+website: https://docs.seerr.dev/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/seerr/seerr
+support: https://github.com/seerr/seerr/discussions
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/seerr.png
+port: 5055
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

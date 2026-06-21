@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-sabnzbd
+category: media
+name: SABnzbd
+version: "1.0"
+tagline: Cliente Usenet automatizado
+description: >
+  SABnzbd é um downloader Usenet baseado em web, fácil de integrar com
+  Radarr, Sonarr, Prowlarr e outros automatizadores.
+developer: SABnzbd
+website: https://sabnzbd.org/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/sabnzbd/sabnzbd
+support: https://forums.sabnzbd.org/
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/sabnzbd.png
+port: 8081
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

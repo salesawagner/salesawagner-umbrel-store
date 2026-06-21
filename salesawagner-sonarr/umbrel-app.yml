@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-sonarr
+category: media
+name: Sonarr
+version: "1.0"
+tagline: Gerenciador de séries automatizado
+description: >
+  Sonarr é um gerenciador de séries que automatiza busca, download e
+  organização de episódios via Usenet e BitTorrent.
+developer: Sonarr
+website: https://sonarr.tv/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/Sonarr/Sonarr
+support: https://github.com/Sonarr/Sonarr/issues
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/sonarr.png
+port: 8989
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []

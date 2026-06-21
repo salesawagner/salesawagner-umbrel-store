@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-plex
+category: media
+name: Plex
+version: "1.0"
+tagline: Servidor de mídia completo
+description: >
+  Plex é um servidor de mídia que organiza e transmite filmes, séries,
+  músicas e fotos para todos os seus dispositivos.
+developer: Plex Inc.
+website: https://www.plex.tv/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/plexinc/pms-docker
+support: https://forums.plex.tv/
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/plex.png
+port: 32400
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []
