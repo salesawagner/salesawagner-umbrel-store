@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: salesawagner-radarr
+category: media
+name: Radarr
+version: "1.0"
+tagline: Gerenciador de filmes para Usenet e BitTorrent
+description: >
+  Radarr é um gerenciador de filmes que automatiza busca, download e
+  organização da sua biblioteca. Integra com clientes de download como
+  qBittorrent e SABnzbd.
+developer: Radarr / hotio
+website: https://radarr.video/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/Radarr/Radarr
+support: https://github.com/Radarr/Radarr/issues
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/radarr.png
+port: 7878
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []
