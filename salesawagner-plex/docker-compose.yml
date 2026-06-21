@@ -1,15 +1,15 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: plex_server_1
+      APP_HOST: plex
       APP_PORT: 32400
       PROXY_AUTH_WHITELIST: /api/*
     container_name: plex_app_proxy_1
     restart: unless-stopped
 
-  server:
+  plex:
     image: ghcr.io/hotio/plex
-    container_name: plex_server_1
+    container_name: plex
     environment:
       - PUID=1000
       - PGID=1000
@@ -35,5 +35,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-plex
-      APP_URL: http://plex_server_1:32400/web
+      APP_URL: http://plex:32400/web
     container_name: salesawagner-plex_mac_1
