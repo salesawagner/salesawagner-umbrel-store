@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-whisparr
 category: media
 name: Whisparr
-version: "2.1"
+version: "3.0"
 tagline: Movie collection manager
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whisparr.png
 description: Gerenciador de coleção de filmes, similar ao Radarr.

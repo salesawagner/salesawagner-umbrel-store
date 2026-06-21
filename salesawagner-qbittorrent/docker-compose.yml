@@ -30,11 +30,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-qbittorrent
-      # URL interna do próprio app dentro da rede Docker
       APP_URL: http://qbittorrent_server_1:8082
-      # URLs padrão do stack *arr que o configurador usa
-      RADARR_URL: http://radarr_server_1:7878
-      RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
-      SONARR_URL: http://sonarr_server_1:8989
-      SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
     container_name: salesawagner-qbittorrent_mac_1

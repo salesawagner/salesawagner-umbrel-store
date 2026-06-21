@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-flaresolverr
 category: media
 name: FlareSolverr
-version: "1.0"
+version: "1.1"
 tagline: Proxy para contornar Cloudflare
 description: >
   FlareSolverr é um proxy que resolve desafios do Cloudflare e semelhantes,

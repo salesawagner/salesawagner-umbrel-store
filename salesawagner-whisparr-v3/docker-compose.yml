@@ -1,21 +1,21 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: whisparr
-      APP_PORT: 6969
+      APP_HOST: whisparr-v3
+      APP_PORT: 6970
       PROXY_AUTH_WHITELIST: /api/*
-    container_name: whisparr_app_proxy_1
+    container_name: whisparr-v3_app_proxy_1
     restart: unless-stopped
 
   server:
-    image: ghcr.io/hotio/whisparr
-    container_name: whispar
+    image: ghcr.io/hotio/whisparr:v3
+    container_name: whisparr-v3
     environment:
       - PUID=1000
       - PGID=1000
       - UMASK=002
       - TZ=America/Sao_Paulo
-      - WEBUI_PORTS=6969/tcp
+      - WEBUI_PORTS=6970/tcp
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - /mnt/downloads:/downloads
@@ -30,6 +30,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
-      APP_ID: salesawagner-whisparr
-      APP_URL: http://whisparr:6969
-    container_name: salesawagner-whisparr_mac_1
+      APP_ID: salesawagner-whisparr-v3
+      APP_URL: http://whisparr-v3:6970
+    container_name: salesawagner-whisparr-v3_mac_1
