@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: salesawagner-stash
+category: media
+name: Stash
+version: "1.0"
+tagline: Organizador de mídia adulta (Stash)
+description: >
+  Stash é um organizador de mídia auto-hospedado, focado em bibliotecas
+  de vídeos adultos, com tagging, busca avançada, scrapers e mais.
+developer: StashApp
+website: https://stashapp.cc/
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/stashapp/stash
+support: https://github.com/stashapp/stash/discussions
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/stash.png
+port: 9999
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []
