@@ -7,7 +7,7 @@ services:
     container_name: clonarr_app_proxy_1
     restart: unless-stopped
 
-  server:
+  clonarr:
     image: ghcr.io/prophetse7en/clonarr
     container_name: clonarr
     environment:
