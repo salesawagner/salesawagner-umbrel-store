@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-plex
 category: media
 name: Plex
-version: "1.2"
+version: "1.3"
 tagline: Servidor de mídia completo
 description: >
   Plex é um servidor de mídia que organiza e transmite filmes, séries,

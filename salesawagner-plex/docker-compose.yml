@@ -35,5 +35,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-plex
-      APP_URL: http://plex_server_1:32400
+      APP_URL: http://plex_server_1:32400/web
     container_name: salesawagner-plex_mac_1
