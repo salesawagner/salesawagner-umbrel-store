@@ -1,15 +1,15 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: sabnzbd_server_1
+      APP_HOST: sabnzbd
       APP_PORT: 8081
       PROXY_AUTH_WHITELIST: /api/*
     container_name: sabnzbd_app_proxy_1
     restart: unless-stopped
 
-  server:
+  sabnzbd:
     image: ghcr.io/hotio/sabnzbd
-    container_name: sabnzbd_server_1
+    container_name: sabnzbd
     environment:
       - PUID=1000
       - PGID=1000
@@ -30,11 +30,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-sabnzbd
-      # URL interna do próprio app dentro da rede Docker
-      APP_URL: http://sabnzbd_server_1:8081
-      # URLs padrão do stack *arr que o configurador usa
-      RADARR_URL: http://radarr_server_1:7878
-      RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
-      SONARR_URL: http://sonarr_server_1:8989
-      SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
+      APP_URL: http://sabnzbd:8081
     container_name: salesawagner-sabnzbd_mac_1

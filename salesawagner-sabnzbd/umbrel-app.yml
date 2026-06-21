@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-sabnzbd
 category: media
 name: SABnzbd
-version: "1.0"
+version: "1.1"
 tagline: Cliente Usenet automatizado
 description: >
   SABnzbd é um downloader Usenet baseado em web, fácil de integrar com

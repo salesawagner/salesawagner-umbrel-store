@@ -1,15 +1,15 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: qbittorrent_server_1
+      APP_HOST: qbittorrent
       APP_PORT: 8082
       PROXY_AUTH_WHITELIST: /api/*
     container_name: qbittorrent_app_proxy_1
     restart: unless-stopped
 
-  server:
+  qbittorrent:
     image: ghcr.io/hotio/qbittorrent
-    container_name: qbittorrent_server_1
+    container_name: qbittorrent
     environment:
       - PUID=1000
       - PGID=1000
@@ -30,5 +30,5 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-qbittorrent
-      APP_URL: http://qbittorrent_server_1:8082
+      APP_URL: http://qbittorrent:8082
     container_name: salesawagner-qbittorrent_mac_1
