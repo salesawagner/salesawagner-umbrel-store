@@ -16,6 +16,8 @@ services:
       - UMASK=002
       - TZ=America/Sao_Paulo
       - WEBUI_PORTS=6970/tcp
+      - WHISPARR__SERVER__PORT=6970
+      - WHISPARR__APP__INSTANCENAME=Whisparr v3
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - /mnt/downloads:/downloads
