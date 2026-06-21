@@ -1,13 +1,32 @@
 services:
+  app_proxy:
+    environment:
+      APP_HOST: salesawagner-clonarr_server_1
+      APP_PORT: 7777
+      PROXY_AUTH_WHITELIST: /api/*
+    container_name: salesawagner-clonarr_app_proxy_1
   server:
-    image: ghcr.io/prophetse7en/clonarr:latest
-    container_name: salesawagner-clonarr_server_1
+    image: >-
+      ghcr.io/prophetse7en/clonarr:latest
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Sao_Paulo
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-    ports:
-      - ${APP_PORT}:7777
     restart: on-failure
+    container_name: salesawagner-clonarr_server_1
+  mac:
+    image: >-
+      getumbrel/media-app-configurator:v1.3.0@sha256:67e75dd9f5a14402b7816119a8e20189bc2465484cea077909d164687e59742b
+    user: '1000:1000'
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+    environment:
+      APP_ID: salesawagner-clonarr
+      APP_URL: http://salesawagner-clonarr_server_1:7777
+      RADARR_URL: http://radarr_server_1:7878
+      RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
+      SONARR_URL: http://sonarr_server_1:8989
+      SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
+    container_name: salesawagner-clonarr_mac_1

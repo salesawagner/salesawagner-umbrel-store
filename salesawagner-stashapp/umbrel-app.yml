@@ -1,0 +1,20 @@
+manifestVersion: 1
+id: salesawagner-stashapp
+category: media
+name: Stash
+version: "0.27"
+tagline: Organize your media collection locally
+icon: icon.svg
+description: Organizador local de mídia com suporte a metadados, tags e busca avançada.
+developer: stashapp
+website: https://stashapp.cc
+submitter: salesawagner
+submission: https://github.com/salesawagner/salesawagner-umbrel-store
+repo: https://github.com/stashapp/stash
+support: https://github.com/stashapp/stash/issues
+port: 9999
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torrentPorts: []
