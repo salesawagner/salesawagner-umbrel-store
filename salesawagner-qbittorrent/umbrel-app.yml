@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-qbittorrent
 category: media
 name: qBittorrent
-version: "1.0"
+version: "1.1"
 tagline: Cliente BitTorrent com Web UI
 description: >
   qBittorrent é um cliente BitTorrent leve, com interface web, ideal para
