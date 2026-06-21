@@ -19,6 +19,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - /mnt/media/media/xxx:/media/xxx
+      - /mnt/media/stash:/stash
     restart: unless-stopped
 
   mac:
