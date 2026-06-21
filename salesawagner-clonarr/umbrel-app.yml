@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-clonarr
 category: media
 name: Clonarr
-version: "1.0"
+version: "1.1"
 tagline: Clone and manage your Arr stack
 description: Permite clonar configurações entre instâncias do seu stack *arr.
 developer: Clonarr
