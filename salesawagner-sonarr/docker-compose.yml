@@ -1,15 +1,15 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: sonarr_server_1
+      APP_HOST: sonarr
       APP_PORT: 8989
       PROXY_AUTH_WHITELIST: /api/*
     container_name: sonarr_app_proxy_1
     restart: unless-stopped
 
-  server:
+  sonarr:
     image: ghcr.io/hotio/sonarr
-    container_name: sonarr_server_1
+    container_name: sonarr
     environment:
       - PUID=1000
       - PGID=1000
@@ -31,11 +31,7 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
     environment:
       APP_ID: salesawagner-sonarr
-      # URL interna do próprio app dentro da rede Docker
-      APP_URL: http://sonarr_server_1:8989
-      # URLs padrão do stack *arr que o configurador usa
-      RADARR_URL: http://radarr_server_1:7878
-      RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
-      SONARR_URL: http://sonarr_server_1:8989
+      APP_URL: http://sonarr:8989
+      SONARR_URL: http://sonarr:8989
       SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
     container_name: salesawagner-sonarr_mac_1
