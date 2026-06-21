@@ -34,4 +34,5 @@ services:
       RADARR_CONFIG_XML: ${APP_PROWLARR_RADARR_CONFIG_XML}
       SONARR_URL: http://sonarr:8989
       SONARR_CONFIG_XML: ${APP_PROWLARR_SONARR_CONFIG_XML}
+      TRANSMISSION_HOST: "dummy"
     container_name: salesawagner-clonarr_mac_1
