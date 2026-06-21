@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-whisparr
 category: media
 name: Whisparr
-version: "2.4"
+version: "2.5"
 tagline: Scenes collection manager
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whisparr.png
 description: Gerenciador de coleção de cenas, similar ao Sonarr.
