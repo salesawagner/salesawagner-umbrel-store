@@ -2,7 +2,7 @@ manifestVersion: 1
 id: salesawagner-radarr
 category: media
 name: Radarr
-version: "1.0"
+version: "1.0.1"
 tagline: Gerenciador de filmes para Usenet e BitTorrent
 description: >
   Radarr é um gerenciador de filmes que automatiza busca, download e
