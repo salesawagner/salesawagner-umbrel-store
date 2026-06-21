@@ -9,7 +9,7 @@ services:
 
   server:
     image: ghcr.io/hotio/whisparr
-    container_name: whispar
+    container_name: whisparr
     environment:
       - PUID=1000
       - PGID=1000
