@@ -19,7 +19,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - /mnt/downloads:/downloads
-      - /mnt/media/media:/media
     restart: unless-stopped
 
   mac:
